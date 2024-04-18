@@ -29,4 +29,10 @@ export function calculatePrice(price, currency) {
         return '';
     }
   }
+
+  export function filterInventory(inventory, searchTerm) {
+    return inventory.filter((item) =>
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }
   
